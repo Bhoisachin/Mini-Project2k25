@@ -1,0 +1,556 @@
+,Stock Name,Symbol
+0,Icicibank,IBN
+1,Cipla,CIPLA.NS
+2,Samvardhana,MOTHERSON.BO
+3,Americanbeacon,ADNIX
+4,Ihcl,INDHOTEL.BO
+5,Cassavasciences,SAVA
+6,Itc,ITC.NS
+7,Mtnl,MTNL.NS
+8,Nvidiacorporation,NVDA
+9,Techmahindra,TECHM.BO
+10,Angelone,ANGELONE.NS
+11,Adanipower,ADANIPOWER.NS
+12,Adanigreenenergy,ADANIGREEN.NS
+13,Indianrailway,IRFC.BO
+14,Tcs,TCS.NS
+15,Bajajauto,BAJAJ-AUTO.BO
+16,Bandhanbanking,0P000125VF.BO
+17,Sbi,SBI
+18,Eichermotors,EICHERMOT.BO
+19,Larsentoubro,LT.NS
+20,Adanienterprises,ADANIENT.NS
+21,Hindustan,HINDZINC.BO
+22,Tatapower,TATAPOWER.NS
+23,Torrentpharm,TORNTPHARM.BO
+24,Siemens,SIEMENS.BO
+25,Maxhealth,MAXHEALTH.NS
+26,Hdfcbank,HDFCBANK.NS
+27,Ntpc,NTPC.NS
+28,Abbott,ABBOTINDIA.BO
+29,Jsw,JSWHL.NS
+30,Hershealth,HIMS
+31,Jpp,JPPOWER.BO
+32,Bankofbaroda.,BANKBARODA.NS
+33,Coalindia,COALINDIA.NS
+34,Rivianautomotive,RIVN
+35,Hindalcoindustries,HINDALCO.NS
+36,Axisgold,AXISGOLD.NS
+37,Tataaia,0P0000NQJX.BO
+38,Ambujacements,AMBUJACEM.BO
+39,Gamestop,GME
+40,Godrej,GODREJCP.BO
+41,Kotakmahindrabank,KOTAKBANK.BO
+42,Divislaboratories,DIVISLAB.BO
+43,Hcl,HCLTECH.NS
+44,Dlf,DLF.BO
+45,Lifeinsurance,LICI.NS
+46,Tatamotors,TATAMOTORS.NS
+47,Pidiliteindustries,PIDILITIND.BO
+48,Ola,OLAELEC.NS
+49,Reliance,RELIANCE.NS
+50,Wipro,WIPRO.NS
+51,Interglobeaviation,INDIGO.NS
+52,Macrotecdevelopers,LODHA.NS
+53,Zomato,ZOMATO.NS
+54,Indianoil,IOC.BO
+55,Gail(India),GQI.F
+56,Oilnaturalgas,ONGC.BO
+57,Ultratechcement,UCLQF
+58,Trent,TRENT.NS
+59,Ntpc,NTPCGREEN.BO
+60,Microsoft,MSFT
+61,Ecorecycling,ECORECO.BO
+62,Google,GOOG
+63,Mahindra,M&M.NS
+64,Cgpower,CGPOWER.NS
+65,Tatateleservices,TTML.BO
+66,Tvs,TVSMOTOR.NS
+67,Shriram,SHRIRAMFIN.NS
+68,Ncl,NCLRESE.BO
+69,Pricingculture,CLTBWOWOM
+70,Britannia,BRITANNIA.BO
+71,Tatainvest,TATAINVEST.BO
+72,Hindustanuni,HINDUNILVR.NS
+73,Grasimindustries,GRASIM.NS
+74,Polycab,POLYCAB.NS
+75,Marutisuzuki,MARUTI.BO
+76,Swiggy,SWIGGY.NS
+77,Thefederalbank,FEDERALBNK.NS
+78,Bharatelec,BEL.NS
+79,Tatasteel,TATASTEEL.NS
+80,Punjabbank.,PNB.NS
+81,Powerfinancecorporation,PFC.BO
+82,Hyundaimotor,HYUNDAI.NS
+83,Lockheed,LMT
+84,Reliance,RELIANCE
+85,Hershealth,HIMS
+86,Nvidiacorporation ,NVDA
+87,Hdfcbank,HDFCBANK.NS
+88,Cassavasciences,SAVA
+89,Tataaia ,0P0000NQJX.BO
+90,Olaelectricmobility,OLAELEC.NS
+91,Jaiprakashpowerventures,JPPOWER.BO
+92,Nclresearch ,NCLRESE.BO
+93,Mahanagartelephone,MTNL.NS
+94,Angelonelimited,ANGELONE.NS
+95,Microsoftcorporation,MSFT
+96,Alphabetinc,GOOG
+97,Swiggylimited,SWIGGY.NS
+98,Adanipowerlimited,ADANIPOWER.NS
+99,Adanienterpriseslimited,ADANIENT.NS
+100,Marutisuzukiindia ,MARUTI.BO
+101,Axisbank ,UZC.SG
+102,Mahindramahindra,MOM.F
+103,Bajajfinserv,BAJAJFINSV.NS
+104,Oilnaturalgascorporation,ONGC.NS
+105,Titancompany,TITAN.NS
+106,Avenuesupermarts,DMART.NS
+107,Powergridcorporationindia,POWERGRID.NS
+108,Hindustanaeronautics,HAL.NS
+109,Adaniportsspecialeconomiczone,ADANIPORTS.NS
+110,Wiproltd,WIPRO.NS
+111,Jswsteel,JSWSTEEL.NS
+112,Tatamotors,TATAMOTORS.BO
+113,Asianpaints,ASIANPAINT.NS
+114,Nestleindia,NESTLEIND.NS
+115,Eternal,ZOMATO.BO
+116,Bharatelectronics,BEL.NS
+117,Indianoilcorporation,IOC.BO
+118,Trentltd,TRENT.NS
+119,Hindustanzinc,HINDZINC.BO
+120,Varunbeverages,VBL.NS
+121,Dlfltd,DLF.BO
+122,Vedantaltd,VEDL.NS
+123,Divislaboratories,DIVISLAB.NS
+124,Jiofinancialservices,JIOFIN.NS
+125,Sbilifeinsurancecompany,SBILIFE.NS
+126,Eichermotors,EICHERMOT.NS
+127,Pidiliteindustries,PIDILITIND.NS
+128,Hdfclifeinsurancecompany,HDFCLIFE.NS
+129,Hindalcoindustries,HNDNF
+130,Ambujacements,AMBUJACEM.NS
+131,Hyundaimotorindia,HYUNDAI.NS
+132,Bajajholdingsinvestment,BAJAJHLDNG.NS
+133,Ltimindtree,LTIM.NS
+134,Tvsmotorcompany,TVSMOTOR.NS
+135,Shriramfinance,SHRIRAMFIN.NS
+136,Macrotechdevelopers,LODHA.NS
+137,Britanniaindustries,BRITANNIA.NS
+138,Bharatpetroleumcorporations,BPCL.NS
+139,Bankofbaroda,BANKBARODA.NS
+140,Godrejconsumerproducts,GODREJCP.NS
+141,Tatapowercompany,TATAPOWER.NS
+142,Ciplaltd,CIPLA.NS
+143,Abbindia,ABBOTINDIA.BO
+144,Punjabnationalbank,PNB.NS
+145,Solarindustriesindia,SOLARINDS.NS
+146,Recltd,UVW.F
+147,Indianhotelscompany,INDHOTEL.NS
+148,Unitedspirits,UNITDSPR.NS
+149,Tataconsumerproducts,TATACONSUM.NS
+150,Adanienergysolutions,ADANIENSOL.NS
+151,Torrentpharmaceuticals,TORNTPHARM.NS
+152,Bajajhousingfinance,BAJAJHFL.NS
+153,Shreecements,SHREECEM.BO
+154,Mazagondockshipbuilders,MAZDOCK.NS
+155,Maxhealthcareinstitute,MAXHEALTH.NS
+156,Industowers,INDUSTOWER.NS
+157,Mankindpharma,MANKIND.NS
+158,Siemensltd,SIEMENS.NS
+159,Apollohospitalsenterprise,APOLLOHOSP.NS
+160,Havellsindia,AHAVELLS.BO
+161,Havellsindia,DIXON.NS
+162,Dixontechnologies(India),DIXON.NS
+163,Drredydlaboratoriesl,RDY
+164,Cgpowerandindustrialsolutions,CGPOWER.NS
+165,Unionbankofindia,UNIONBANK.NS
+166,Hdfcassetmanagementcompany,HDFCAMC.BO
+167,Samvardhanamothersoninternational,MOTHERSON.BO
+168,Gmrairports.,GMRAIRPORT.BO
+169,Icicilombardgeneralinsurancecompany,ICICIGI.NSO
+170,Jindalsteel&Power,JINDALSTEL.NS
+171,Marico,MARICO.Ns
+172,Infoedge(India),NAUKRI.NS
+173,Ntpcgreenenergy,NTPCGREEN.BO
+174,Canarabank,CANBK.NS
+175,Idbibank,IDBI.NS
+176,Nhpc,NHPC.NS
+177,Sbicardsandpaymentservices,SBICARD.NS
+178,Zydus Lifesciences,ZYDUSLIFE.BO
+179,S&Pbsesensex,^BSESN
+180,Jswenergy,JSWENERGY.NS
+181,Iciciprudentiallifeinsurancecompany,JICICIPRULI.NS
+182,Daburindia,DABUR.NS
+183,Vodafoneidea,IDEA.NS
+184,Muthootfinance,MUTHOOTFIN.NS
+185,Boschltd,BOSCHLTD.NS
+186,Polycabindia,POLYCAB.NS
+187,Hindustanpetroleumcorporation,PHINDPETRO.NS
+188,Suzlonenergy,SUZLON.NS
+189,Waareeenergies,WAAREEENER.NSS
+190,Bhartihexacom,BHARTIHEXA.NS
+191,Cumminsindia,CUMMINSIND.NS
+192,Persistentsystems,PERSISTENT.NS
+193,Torrentpower,TORNTPOWER.NS
+194,Tbharatheavyelectricals,BHEL.NS
+195,Heromotocorp,HEROMOTOCO.NS
+196,Swiggy,SWIGGY.NS
+197,Indianbank,INDIANB.BO
+198,Railvikasnigam,RVNL.NS
+199,Pbfintech,POLICYBZR.NS
+200,Oraclefinancialservicessoftware,OFSS.NS
+201,Generalinsurancecorporationofindia,GICRE.NS
+202,Indianoverseasbank,IOB.NS
+203,Colgatepalmolive(India),COLPAL.NS
+204,Aurobindopharma,AUROPHARMA.NS
+205,Patanjalifoods,PATANJALI.NS
+206,Lloydsmetalsenergy,LLOYDSME.NS
+207,Bergerpaints(India),BERGEPAINT.NS
+208,Adanitotalgas,ATGL.NS
+209,Ashokleyland,ASHOKLEY.NS
+210,Coromandelinternational,COROMANDEL.NS
+211,Oilindia,OIL.NS
+212,Godrejproperties,GODREJPROP.NS
+213,Indusindbank,INDUSINDBK.NS
+214,Abbottindia,ABBOTINDIA.BO
+215,Jswinfrastructure,JSWINFRA.NS
+216,Indianrailwaycateringtourismcorporation,IRCTC.NS
+217,Alkemlaboratories,ALKEM.NS
+218,Hitachienergyindia,POWERINDIA.NS
+219,Phoenixmills,PHOENIXLTD.NS
+220,Sundaramfinance,SUNDARMHLD.NS
+221,Oberoirealty,OBEROIRLTY.NS
+222,Nmdc,NMDC.NS
+223,Unitedbreweries,CVU.SG
+224,One97Communications,PAYTM.NS
+225,Yesbank,YESBANK.NS
+226,Fsne-Commerceventures,NYKAA.NS
+227,Lindeindia,LINDEINDIA.NS
+228,Mrfltd,MRF.NS
+229,Prestigeestatesprojects,PRESTIGE.NS
+230,Piindustries,PIDILITIND.NS
+231,Uplltd,UPL.NS
+232,Bharatforge,BHARATFORG.NS
+233,Kalyanjewellersindia,KALYANKJIL.NS
+234,Bharatdynamics,BDL.NS
+235,Unominda,UNOMINDA.NS
+236,Adityabirlacapital,ABCAPITAL.NS
+237,Tubeinvestmentsofindia,TIINDIA.BO
+238,Ausmallfinancebank,AUBANK.NS
+239,Schaefflerindia,SCHAEFFLER.NS
+240,Pageindustries,PAGEIND.NS
+241,Coforgeltd,COFORGE.NS
+242,Vishalmegamart,VMM.NS
+243,Fortishealthcare,FORTIS.NS
+244,Balkrishnaindustries,BALKRISIND.NS
+245,Federalbank,FEDERALBNK.NS
+246,Mphasis,MPHASIS.NS
+247,Steelauthorityofindia,SAIL.NS
+248,Thefertiliserschemicalstravancore,FACT.NS
+249,Glaxosmithklinepharmaceuticals,GLAXO.NS
+250,Petronetlng,PETRONET.NS
+251,Jindalstainless,JSL.NS
+252,Procter&Gamblehygiene&Healthcare,PGHH.NS
+253,Jubilantfoodworks,JUBLFOOD.NS
+254,Indianrenewableenergydevelopmentagency,IREDA.NS
+255,L&Ttechnologyservices,LTTS.NS)
+256,Premierenergies,PREMIERENE.NS)
+257,Aplapollotubes,APLAPOLLO.NS
+258,Tatacommunications,TATACOMM.NS
+259,Housingurbandevelopmentcorporation,HUDCO.NS
+260,Supremeindustries,SUPREMEIND.NS
+261,Maxfinancialservices,MFSL.NS
+262,Gujaratfluorochemicals,FLUOROCHEM.NS
+263,L&Tfinance,LTF.NS
+264,Hexawaretechnologies,HEXT.NS
+265,Motilaloswalfinancialservices,MOTILALOFS.NS
+266,Godfreyphillipsindia,GODFRYPHLP.NS
+267,Containercorporationofindia ,CONCOR.NS
+268,Thermax ,THERMAX.NS
+269,Nipponlifeindiaassetmanagement  ,PHARMABEES.NS
+270,Voltas ,VOLTAS.NS
+271,Jkcement,JKCEMENT.NS
+272,Itchotels,ITCHOTELS.NS
+273,Bankofmaharashtra,MAHABANK.NS
+274,360Onewam,360ONE.NS
+275,Glenmarkpharmaceuticals,GLENMARK.NS
+276,Gevernovat&Dindia,GVT&D.NS
+277,Gucobank,UCO Bank
+278,Sjvnltd,SJVN.NS
+279,Bioconltd,BIOCON.BO
+280,Cochinshipyard ,COCHINSHIP.NS
+281,Escortskubota ,ESCORTS.NS
+282,Cholamandalamfinancialholdings ,CHOLAHLDNG.NS
+283,Dalmiabharat ,DALBHARAT.NS
+284,Godrejindustries ,GODREJIND.NS
+285,Narayanahrudayalaya ,NH.NS
+286,Accltd ,ACCEDERE.BO
+287,Astralltd ,ASTRAL.NS
+288,Tataelxsi ,TATAELXSI.NS
+289,Bluestar ,BLUESTARCO.NS
+290,Ipcalaboratories  ,IPCALAB.NS
+291,Kprmill  ,KPRMILL.NS
+292,Awlagribusiness  ,AWL.NS
+293,Kpittechnologies  ,KPITTECH.NS
+294,Ajantapharma  ,AJANTPHARM.NS
+295,3Mindia  ,3MINDIA.NS
+296,Lichousingfinance  ,LICHSGFIN.NS
+297,Radicokhaitan  ,RADICO.NS
+298,Lauruslabs  ,LAURUSLABS.NS
+299,Crisilltd  ,CRISIL.NS
+300,Mahindramahindrafinancialservices  ,M&MFIN.NS
+301,Multicommodityexchangeindia  ,MCX.NS
+302,Adityabirlafashionretail  ,ABFRL.NS
+303,Nlcindia ,NLCINDIA.NS
+304,Gujaratgas ,GUJGASLTD.NS
+305,Honeywellautomationindia ,HONAUT.NS
+306,Sonablwprecisionforgings  ,SONACOMS.NS
+307,Apollotyres  ,APOLLOTYRE.NS
+308,Authuminvestmentinfrastructure  ,AIIL.NS
+309,Exideindustries  ,EXIDEIND.NS
+310,Poonawallafincorp  ,POONAWALLA.BO
+311,Metrobrands  ,METROBRAND.NS
+312,Nationalaluminiumcompany  ,NATIONALUM.NS
+313,Keiindustries  ,KEI.NS
+314,Aiaengineering  ,AIAENG.NS
+315,Suvenpharmaceuticals  ,SUVENPHAR.NS
+316,Thenewindiaassurancecompany  ,NIACL.NS
+317,Piramalpharma  ,PPLPHARMA.NS
+318,Irbinfrastructuredevelopers  ,IRB.NS
+319,Emamiltd  ,EMAMIREAL.NS
+320,Pnbhousingfinance  ,PNBHOUSING.NS
+321,Indraprasthagas  ,IGL.NS
+322,Aegislogistics  ,AEGISLOG.NS
+323,Deepaknitrite  ,DEEPAKNTR.NS
+324,Krishnainstitutemedicalsciences  ,KIMS.NS
+325,Asterdmhealthcare  ,ASTERDM.NS
+326,Endurancetechnologies  ,ENDURANCE.NS
+327,Godigitgeneralinsurance  ,GODIGIT.BO
+328,Sumitomochemicalindia  ,SUMICHEM.NS
+329,Bandhanbank  ,BANDHANBNK.NS
+330,Gilletteindia  ,GILLETTE.NS
+331,Nbccindia  ,NBCC.NS
+332,Inventurusknowledgesolutions  ,IKS.NS
+333,Polymedicure  ,POLYMED.NS
+334,Jyoticncautomation  ,JYOTICNC.NS
+335,Syngeneinternational  ,SYNGENE.NS
+336,Mothersonsumiwiringindia  ,MSUMI.NS
+337,Jbchemicalspharmaceuticals  ,JBCHEPHARM.NS
+338,Suntvnetwork  ,SUNTV.NS
+339,Brigadeenterprises  ,BRIGADE.NS
+340,Shyammetalicsenergy  ,SHYAMMETL.NS
+341,Mangalorerefinerypetrochemicals  ,MRPL.NS
+342,Pgelectroplast  ,PGEL.NS
+343,Firstsourcesolutions  ,FSL.NS
+344,Drlalpathlabs  ,LALPATHLAB.NS
+345,Glandpharma  ,GLAND.NS
+346,Zfcommercialvehiclecontrolsystemsindia  ,ZFCVINDIA.NS
+347,Eih Ltd  ,EIHAHOTELS.NS
+348,Delhiveryltd ,DELHIVERY.NS
+349,Affle3I ,AFFLE.NS
+350,Navinfluorineinternational ,NAVINFLUOR.NS
+351,Jubilantagriconsumerproducts ,JUBLCPL.NS
+352,Theramcocements ,RAMCOCEM.NS
+353,Aparindustries ,APARINDS.NS
+354,Starhealthalliedinsurancecompany ,STARHEALTH.NS
+355,Piramalenterprises ,PEL.NS
+356,Nuvamawealthmanagement ,NUVAMA.NS
+357,Gardenreachshipbuildersengineers ,GRSE.NS
+358,Inoxwind ,IWEL.NS
+359,Himadrispecialitychemical ,HSCL.NS
+360,Devyaniinternational ,DEVYANI.NS
+361,Olaelectricmobility ,OLAELEC.NS
+362,Tatachemicals ,TATACHEM.NS
+363,Wockhardt ,WOCKPHARMA.NS
+364,Adityabirlarealestate ,ABREL.NS
+365,Bayercropscience ,BAYERCROP.NS
+366,Cescltd ,CESC.NS
+367,Amberenterprisesindia ,AMBER.NS
+368,Astrazenecapharmaindia ,ASTRAZEN.NS
+369,Angelone ,ANGELONE.NS
+370,Punjab&Sindbank ,PSB.NS
+371,Cromptongreavesconsumerelectricals ,CROMPTON.NS
+372,Kansainerolacpaints ,KANSAINER.NS
+373,Hindustancopper ,HINDCOPPER.NS
+374,Atulltd ,ATUL.NS
+375,Fivestarbusinessfinance ,FIVESTAR.NS
+376,Erislifesciences ,ERIS.NS
+377,Aadharhousingfinance ,AADHARHFC.NS
+378,Welspuncorp ,WELCORP.NS
+379,Hatsunagroproducts ,HATSUN.NS
+380,Timkenindia ,TIMKEN.NS
+381,Pfizerltd ,PFIZER.NS
+382,Castrolindialtd ,CASTROLIND.NS
+383,Manappuramfinance ,MANAPPURAM.NS
+384,Redington ,REDINGTON.NS
+385,Kfintechnologies ,KFINTECH.NS
+386,Ptcindustries   ,PTCIL.NS
+387,Sagilityindia   ,SAGILITY.NS
+388,Emcurepharmaceuticals   ,EMCURE.NS
+389,Carborundumuniversal  ,CARBORUNIV.NS
+390,Skfindia  ,SKFINDIA.NS
+391,Emcurepharmaceuticals ,EMCURE.NS
+392,Sundramfasteners ,SUNDRMFAST.NS
+393,Anantraj ,ANANTRAJ.NS
+394,Eidparry(India) ,EIDPARRY.NS
+395,Ventivehospitality,VENTIVE.NS
+396,Deepakfertilisers&Petrochemicalscorporation,DEEPAKFERT.NS
+397,Iiflfinance,IIFL.NS
+398,Zensartechnologies,ZENSARTECH.NS
+399,Afconsinfrastructure,AFCONS.NS
+400,Aartiindustries,AARTIIND.NS
+401,Jbmauto,JBMA.NS
+402,Kiocl,KIOCL.NS
+403,Cieautomotiveindia,CIEINDIA.NS
+404,Jupiterwagons,JWL.NS
+405,Nivabupahealthinsurancecompany,NIVABUPA.NS
+406,V-Guardindustries,VGUARD.NS
+407,Sardaenergyminerals,SARDAEN.NS
+408,Whirlpoolofindia,WHIRLPOOL.NS
+409,Bluedartexpress,BLUEDART.NS
+410,Centuryplyboards(India),CENTURYPLY.NS
+411,Centuryplyboards(India),AKZOINDIA.NS
+412,Dcmshriram,DCMSRIND.NS
+413,Internationalgemmologicalinstitute(India),IGIL.NS
+414,Blsinternationalservices,BLS.NS
+415,Caplinpointlaboratories,CAPLIPOINT.NS
+416,Eclerxservices,ECLERX.NS
+417,Hblengineering,HBLENGINE.NS
+418,Concordbiotech,CONCORDBIO.NS
+419,Jubilantpharmova,JUBLPHARMA.NS
+420,Schneiderelectricinfrastructure,SCHNEIDER.NS
+421,Ceat,CEATLTD.NS
+422,Bataindia,BATAINDIA.NS
+423,Maharashtrascooters,MAHSCOOTER.NS
+424,Domsindustries,DOMS.NS
+425,Kajariaceramics,KAJARIACER.NS
+426,Natcopharma,NATCOPHARM.NS
+427,Gravitaindia,GRAVITA.NS
+428,Sailifescience,SAILIFE.NS
+429,Anandrathiwealth,ANANDRATHI.NS
+430,Utiassetmanagementcompany,UTIAMC.NS
+431,Trident,TRIDENT.NS
+432,Elgiequipments,ELGIEQUIP.NS
+433,Pcblchemical,PCBL.NS
+434,Intellectdesignarena,INTELLECT.NS
+435,Beml,BEML.NS
+436,Vardhmantextiles,VTL.NS
+437,Actionconstructionequipment,ACE.NS
+438,Datapatterns(India),DATAPATTNS.NS
+439,Kirloskarbrothers,KIRLOSBROS.NS
+440,Eleconengineeringcompany,ELECON.NS
+441,Rrkabel,RRKABEL.NS
+442,Sanofiindia,SANOFI.NS
+443,Acmesolarholdings,ACMESOLAR.NS
+444,Finolexcables,FINCABLES.NS
+445,Cityunionbank,CUB.NS
+446,Cyient,CYIENT.NS
+447,Technoelectricengineeringcompany,TECHNOE.NS
+448,Indegene,INDGN.NS
+449,Neulandlaboratories,NEULANDLAB.NS
+450,Aavasfinanciers,AAVAS.NS
+451,Godrejagrovet,GODREJAGRO.NS
+452,Indiamartintermesh,INDIAMART.NS
+453,Fineorganicindustries,FINEORG.NS
+454,Ksb,KSB.NS
+455,Forcemotors,FORCEMOT.NS
+456,Bombayburmahtradingcorporation,BBTC.NS
+457,Alivuslifesciences,ALIVUS.NS
+458,Rainbowchildrensmedicare,RAINBOW.NS
+459,Mahanagargas,MGL.NS
+460,Sobha,SOBHA.NS
+461,Jindalsaw,JINDALSAW.NS
+462,Swanenergy,SWANENERGY.NS
+463,Cleansciencetechnology,CLEAN.NS
+464,Ifci,IFCI.NS
+465,Celloworld,CELLO.NS
+466,Supremepetrochem,SPLPETRO.NS
+467,Embassydevelopments,EMBDL.NS
+468,Capriglobalcapital,CGCL.NS
+469,Nava ,NAVA.NS
+470,Paradeepphosphates,PARADEEP.NS
+471,Rites,RITES.NS
+472,Ltfoods,LTFOODS.NS
+473,Godawaripowerispat,GPIL.NS
+474,Greateasternshippingcompany,GESHIP.NS
+475,Inoxwindenergy,IWEL.NS
+476,Tejasnetworks,TEJASNET.NS
+477,Craftsmanautomation,CRAFTSMAN.NS
+478,Tbotek,TBOTEK.NS
+479,Nuvocovistascorporation,NUVOCO.NS
+480,Rblbank,RBLBANK.NS
+481,Kirloskaroilengines,KIRLOSENG.NS
+482,Dragarwalshealthcare,AGARWALEYE.NS
+483,Ingersollrand(India),INGERRAND.NS
+484,Granulesindia,GRANULES.NS
+485,Titagarhrailsystems,TITAGARH.NS
+486,Zyduswellness,ZYDUSWELL.NS
+487,Jyothylabs,JYOTHYLAB.NS
+488,Grinfraprojects,GRINFRA.NS
+489,Eurekaforbes,EUREKAFORB.NS
+490,Homefirstfinancecompanyindia,HOMEFIRST.NS
+491,Railtelcorporationofindia,RAILTEL.NS
+492,Atherenergy,ATHERENERG.NS
+493,Hfcl,HFCL.NS
+494,Mindacorporation,MINDACORP.NS
+495,Avantifeeds,AVANTIFEED.NS
+496,Sanoficonsumerhealthcareindia,SANOFICONR.NS
+497,Zeeentertainmententerprises,ZEEL.NS
+498,Birlasoft,BSOFT.NS
+499,Azadengineering,AZAD.NS
+500,Finolexindustries,FINPIPE.NS
+501,Tatateleservices(Maharashtra),TTML.NS
+502,Gallanttispat,GALLANTT.NS
+503,Nmdcsteel,NSLNISP.NS
+504,Sbfcfinance,SBFC.NS
+505,Gujaratmineraldevelopmentcorporation,GMDCLTD.NS
+506,Jammu&Kashmirbank,J&KBANK.NS
+507,Jmfinancial,JMFINANCIL.NS
+508,Nazaratechnologies,NAZARA.NS
+509,Vesuviusindia,VESUVIUS.NS
+510,Engineersindia,ENGINERSIN.NS
+511,Ramkrishnaforgings,RKFORGE.NS
+512,Alliedblenders&Distillers,ABDL.NS
+513,Balrampurchinimills,BALRAMCHIN.NS
+514,Sonatasoftware,SONATSOFTW.NS
+515,Safariindustries(India),SAFARI.NS
+516,Shrirampistons&Rings,SHRIPISTON.NS
+517,C.E.Infosystems,MAPMYINDIA.NS
+518,Jubilantingrevia,JUBLINGREA.NS
+519,Lemontreehotels,LEMONTREE.NS
+520,Inoxindia,INOXINDIA.NS
+521,Cclproductsindia,CCL.NS
+522,Medplushealthservices,MEDPLUS.NS
+523,Westlifefoodworld,WESTLIFE.NS
+524,Prudentcorporateadvisoryservices,PRUDENT.NS
+525,Birlacorporation,BIRLACORPN.NS
+526,Graphiteindia,GRAPHITE.NS
+527,Relaxofootwears,RELAXO.NS
+528,Anupamrasayanindia,ANURAS.NS
+529,Waareerenewabletechnologies,WAAREERTL.NS
+530,Jktyre&Industries,JKTYRE.NS
+531,Olectragreentech,OLECTRA.NS
+532,Saregamaindia,SAREGAMA.NS
+533,Sapphirefoodsindia,SAPPHIRE.NS
+534,Astramicrowaveproducts,ASTRAMICRO.NS
+535,Chennaipetroleumcorporation,CHENNPETRO.NS
+536,Shaktipumps(India),SHAKTIPUMP.NS
+537,Jaiprakashpowerventures,JPPOWER.NS
+538,Netwebtechnologiesindia,NETWEB.NS
+539,Valorestate,DBREALTY.NS
+540,Jklakshmicement,JKLAKSHMI.NS
+541,Garwarehitechfilms,GRWRHITECH.NS
+542,Sammaancapital,SAMMAANCAP.NS
+543,Canfinhomes,CANFINHOME.NS
+544,Ushamartin,USHAMART.NS
+545,Indiacements,INDIACEM.NS
+546,Genuspowerinfrastructures,GENUSPOWER.NS
+547,Aetherindustries,AETHER.NS
+548,Acutaaschemicals,AMIORG.NS
+549,Jaibalajiindustries,JAIBALAJI.NS
+550,Tegaindustries,TEGA.NS
+551,Vijayadiagnosticcentre,VIJAYA.NS
+552,Gabrielindia,GABRIEL.NS
+553,Heg,HEG.NS
+554,Rhimagnesitaindia,RHIM.NS
