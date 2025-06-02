@@ -33,9 +33,12 @@ venv\Scripts\activate   # For Windows
 
 
 3 Install required packages:
-pip install -r requirment.txt
+  ```bash
+   pip install -r requirment.txt
 
 4 Open terminal or command prompt in the project directory.
+
+   ```bash
   strimlit run Market_S.py
 
 
