@@ -4,6 +4,7 @@ import os
 import pandas as pd
 import numpy as np
 from sklearn.linear_model import LinearRegression
+from sklearn.metrics import r2_score, mean_absolute_error
 from datetime import date, datetime
 import yfinance as yf
 import google.generativeai as genai
@@ -20,7 +21,7 @@ import re
 # Load environment variables
 load_dotenv()
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-sentiment_model = pipeline("sentiment-analysis", model="nlptown/bert-base-multilingual-uncased-sentiment")
+sentiment_model = pipeline("sentiment-analysis", model="nlptown/bert-base-multilingual-uncased-sentiment",device=-1)
 
 # Initialize Whisper model
 try:
@@ -108,83 +109,17 @@ def create_data(operation, **kwargs):
     return pd.DataFrame([base_data])
 
 def handle_operation(stock_name, stock_symbol, operation):
-    """Handle stock data operations (close, high, low) with stable inputs."""
-    file_path = f'csvfile/{stock_name}_NS_{operation}.csv'
+     # # Fetch real-time data for day predictions
+    real_time_data = fetch_real_time_data(stock_symbol)
     
-    # Check if file already exists
-    if os.path.exists(file_path):
-        df = pd.read_csv(file_path)
-        if df['Date'].iloc[-1] == str(date.today()):
-            predict_price(df, operation, stock_name, stock_symbol)
-        else:
-            os.remove(file_path)
-            st.warning("⚠️ Existing data is outdated. Please enter new stock data.")
-            handle_operation(stock_name, stock_symbol, operation)
+    if not real_time_data:
+        st.error("⚠️ Unable to fetch real-time data. Please try again.")
+        return
     else:
-        st.info("📝 No data found. Please enter stock values for prediction.")
-        
-        # Collect user inputs using the fixed input function
-        inputs = collect_user_inputs(operation)
-        
-        # Now inputs will return only after button is pressed and values are filled
-        if inputs:
-            df = create_data(operation, **inputs)
-            save_to_csv(stock_name, operation, df)
-            st.success("✅ Data saved. Running prediction...")
-            predict_price(df, operation, stock_name, stock_symbol)
-def collect_user_inputs(operation):
-    """Step-by-step input collection for stock data based on operation (close, high, low)."""
-    
-    prefix = f"{operation}_step_"
-    
-    # Initialize step tracker
-    if f"{prefix}step" not in st.session_state:
-        st.session_state[f"{prefix}step"] = 1
-
-    step = st.session_state[f"{prefix}step"]
-
-    # Define the input sequence based on operation
-    input_order = {
-        'close': ['High', 'Low', 'Open', 'Volume'],
-        'high': ['Close', 'Low', 'Open', 'Volume'],
-        'low': ['Close', 'High', 'Open', 'Volume']
-    }
-
-    labels = {
-        'High': "High value",
-        'Low': "Low value",
-        'Open': "Open value",
-        'Close': "Close value",
-        'Volume': "Volume"
-    }
-
-    fields = input_order.get(operation, [])
-
-    # Show one input field at a time
-    if step <= len(fields):
-        field_name = fields[step - 1]
-        key = f"{prefix}{field_name}"
-        value = st.number_input(
-            f"Step {step}️⃣: Enter {labels[field_name]}",
-            min_value=0.0,
-            key=key
-        )
-        if st.button("Next ➡️", key=f"{key}_next") and value > 0:
-            st.session_state[f"{prefix}step"] += 1
-            st.experimental_rerun()
-
-    # Once all fields are entered, show submit button
-    if step > len(fields):
-        if st.button("✅ Submit All", key=f"{prefix}submit"):
-            inputs = {}
-            for f in fields:
-                inputs[f] = st.session_state.get(f"{prefix}{f}", 0.0)
-            if all(v > 0 for v in inputs.values()):
-                 return inputs
-            else:
-                st.warning("⚠️ Please enter all values greater than 0.")
-
-    return None
+      st.success("✅ Real-time 1-minute data fetched and aggregated successfully!")
+      df = create_data(operation, **real_time_data)
+      save_to_csv(stock_name, operation, df)
+      predict_price(df, operation, stock_name, stock_symbol)
 
 def predict_price(df, operation, stock_name, stock_symbol):
     """Predict stock price using LinearRegression."""
@@ -200,19 +135,38 @@ def predict_price(df, operation, stock_name, stock_symbol):
     lr.fit(X, y)
     actual_price = stock_data[target_col].tail(1).values[0]
     predicted_price = lr.predict(df.drop(columns=['Price'], errors='ignore'))[0]
-    ai_prompt = (f"Hello AI, actual price: {actual_price:.2f}, predicted price: {predicted_price:.2f}. "
+    ai_prompt = (f"Hello AI, actual price: {actual_price[0]:.2f}, predicted price: {predicted_price[0]:.2f}. "
                  f"Summarize the stock {stock_name} and advise on buy/sell.")
     st.success(call_ai(ai_prompt))
+    st.success(f"📈 Predicted Price: ₹{predicted_price[0]:.2f}")
+    csv_file = f'csvfile/data_day.csv'
+    new_row = {
+        'index': pd.read_csv(csv_file)['index'].max() + 1 if os.path.exists(csv_file) else 1,
+        'date': datetime.now().strftime('%Y-%m-%d'),
+        'time': datetime.now().strftime('%H:%M:%S'),
+        'stock_name': stock_name,
+        'operation': operation,
+        'predicted_value': predicted_price,
+        'past_value': float(actual_price)
+    }
+    df_new = pd.DataFrame([new_row])
+    if os.path.exists(csv_file):
+        df_existing = pd.read_csv(csv_file)
+        df_new = pd.concat([df_existing, df_new], ignore_index=True)
+    df_new.to_csv(csv_file, index=False)
 
 def predict_time_range(stock_name, stock_symbol, operation, time_range):
-    """Handle predictions for different time ranges."""
+    """Handle predictions for different time ranges and show model performance."""
+    
     periods = {'week': 1040, 'month': 240, 'year': 20}
     if time_range not in periods:
         st.error("Invalid time range.")
         return
+
     data = train_data(stock_symbol)
     if data.empty:
         return
+
     chunk_size = int(len(data) / periods[time_range])
     aggregated_data = []
     for i in range(0, len(data), chunk_size):
@@ -224,11 +178,21 @@ def predict_time_range(stock_name, stock_symbol, operation, time_range):
             'volume': np.average(chunk['Volume'])
         }
         aggregated_data.append(agg)
+
     df = pd.DataFrame(aggregated_data)
     X = df.drop(columns=[operation], errors='ignore')
     y = df[operation]
+
+    # Train model
     lr = LinearRegression()
     lr.fit(X, y)
+
+    # Evaluation metrics
+    y_pred_all = lr.predict(X)
+    r2 = r2_score(y, y_pred_all)
+    mae = mean_absolute_error(y, y_pred_all)
+
+    # Prepare input for prediction
     tail_size = chunk_size
     pred_input = {
         'close': np.average(data['Close'].tail(tail_size)),
@@ -239,6 +203,18 @@ def predict_time_range(stock_name, stock_symbol, operation, time_range):
     pred_df = pd.DataFrame([pred_input]).drop(columns=[operation], errors='ignore')
     predicted_price = lr.predict(pred_df)[0]
     actual_price = data[operation.capitalize()].tail(1).values[0]
+
+    # AI Summary
+    ai_prompt = (
+        f"Hello AI, predicted price: {predicted_price:.2f}. "
+        f"Summarize the stock {stock_name} and advise on buy/sell."
+    )
+    st.success(call_ai(ai_prompt))
+    st.success(f"📈 Predicted Price: ₹{predicted_price:.2f}")
+
+    
+
+    # Save to CSV
     csv_file = f'csvfile/data_{time_range}.csv'
     new_row = {
         'index': pd.read_csv(csv_file)['index'].max() + 1 if os.path.exists(csv_file) else 1,
@@ -254,10 +230,7 @@ def predict_time_range(stock_name, stock_symbol, operation, time_range):
         df_existing = pd.read_csv(csv_file)
         df_new = pd.concat([df_existing, df_new], ignore_index=True)
     df_new.to_csv(csv_file, index=False)
-    ai_prompt = (f"Hello AI, predicted price: {predicted_price:.2f}. "
-                 f"Summarize the stock {stock_name} and advise on buy/sell.")
-    st.success(call_ai(ai_prompt))
-
+             
 def optimize_portfolio(tickers, total_investment, investment_duration, start_date, end_date):
     """Optimize portfolio using PyPortfolioOpt."""
     try:
@@ -494,6 +467,27 @@ def translate_to_english(text, lang_code):
     prompt = f"Translate this text from {lang_code} to English:\n\n{text}"
     return call_ai(prompt)
 
+def fetch_real_time_data(stock_symbol):
+    """Fetch real-time stock data using yfinance with 1-minute interval."""
+    try:
+        ticker = yf.Ticker(stock_symbol)
+        # Fetch 1-minute interval data for the current day
+        data = ticker.history(period="1d", interval="1m")
+        if data.empty:
+            raise ValueError("No real-time data available.")
+        # Aggregate data to get a single row (e.g., average of the day)
+        aggregated_data = {
+            'open': data['Open'].mean(),
+            'high': data['High'].max(),  # Use max for high
+            'low': data['Low'].min(),    # Use min for low
+            'close': data['Close'].mean(),
+            'volume': data['Volume'].sum()  # Sum for volume
+        }
+        return aggregated_data
+    except Exception as e:
+        st.error(f"Failed to fetch real-time data: {e}")
+        return None
+# Streamlit application for MARKET.AI
 def main():
     """Main application logic."""
     st.title("MARKET.AI")
