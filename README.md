@@ -41,5 +41,9 @@ bash```
  ```bash  strimlit run Market_S.py  bash```
 
 
+ ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+
+
 
 
